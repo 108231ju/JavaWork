@@ -1,0 +1,18 @@
+SELECT * FROM TEST_MEMBER ;
+
+INSERT INTO TEST_MEMBER values(10,'남윤주',sysdate);
+
+--INSERT INTO 테이블이름
+--UPDATE 테이블이름 SET
+--DELETE FROM 테이블이름
+
+SELECT * FROM TEST_MEMBER ;
+
+INSERT INTO TEST_MEMBER values(22,'이승환','1994-02-21');
+INSERT INTO TEST_MEMBER values(17,'윤종섭','2019-08-03');
+INSERT INTO TEST_MEMBER values('','이예지',''); -- 비어있는 '' 는 null로 처리
+-- INSERT INTO	TEST_MEMBER VALUES('','',''); --오류
+SELECT * FROM TEST_MEMBER ;
+INSERT  INTO TEST_MEMBER VALUES(NULL, '문상현', '2017-01-01');
+
+-- dbeaver 에서는 기본적으로 auto-COMMIT 수행
