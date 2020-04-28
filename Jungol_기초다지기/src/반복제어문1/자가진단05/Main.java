@@ -31,8 +31,19 @@ public class Main {
 	public static void main(String[] args) {
 		System.out.println();
 		Scanner sc = new Scanner(System.in);
-		//int i = sc.next
-			sc.close();
+		for(;;) {
+			
+		int i = sc.nextInt();
+		int t = i / 3;
+			if(i % 3 == 0) {
+				System.out.println(t);
+			}else if(i < 0) {
+				break;
+			}
+			
+		}
+		sc.close();
+			
 		}
 		
 	}
