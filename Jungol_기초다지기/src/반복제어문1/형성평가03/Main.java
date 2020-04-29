@@ -16,24 +16,25 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner (System.in);
+	System.out.println();
+	Scanner sc = new Scanner (System.in);
+	int i, sum, count;
+	count = 0;
+	sum = 0;
+	
+	for(;;) {
+		i = sc.nextInt();
+		if(i > 100 || 0 > i) break;
+			count++;
+			sum += i;
+	
 		
-		int n = sc.nextInt();
-		int sum = 0, cnt = 0;
-		
-		for(;;) {
-			n = sc.nextInt();
-			if(n > 100) break;
-			sum += n;
-			cnt++;
-			
-			if(n > 100) break;
-		} //for end
-		
-		System.out.println("sum : " + sum);
-		System.out.println("avg : " + (double) sum/cnt);
-		sc.close();
-
 	}
-
+	
+	System.out.println("sum : " + sum);
+	System.out.println("avg : " + (double)sum/count);
+	sc.close();
+	}
 }
+
+
