@@ -24,15 +24,17 @@ public class Main {
 	
 	for(;;) {
 		i = sc.nextInt();
-		if(i > 100 || 0 > i) break;
+		if(i > 100 || i < 0 ) break;
 			count++;
 			sum += i;
+			
+		
 	
 		
 	}
 	
 	System.out.println("sum : " + sum);
-	System.out.println("avg : " + (double)sum/count);
+	System.out.println("avg : " + Math.round(((double)sum/count)*10.0)/10.0);
 	sc.close();
 	}
 }
