@@ -18,18 +18,18 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
+		
+		System.out.println();
 		Scanner sc = new Scanner(System.in);
 		
-		int n = sc.nextInt();
+		int i = sc.nextInt();
 		
-		for(int i = 0; i < n ; i++) {
-			for(int j = 0; j <= i; j++) {				
+		for(int j = 1;j <= i;j++) {
+			for(int m = 1;m <= j; m++) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
-		
-		
 		
 		sc.close();
 	}
