@@ -36,7 +36,21 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-	
+		System.out.println();
+		Scanner sc = new Scanner(System.in);
+		int i = sc.nextInt(); // 3
+		for(int j = 1 ; j <= i; j++) {
+			for(int m = (2*i-1);m >= j; m--) {
+				if(j+m <= 2*i) {
+					System.out.print("*");
+				}else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+			
+		}
+		sc.close();
 	}
 
 }
