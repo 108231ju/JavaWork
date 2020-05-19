@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/* Model */
+.modal {
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    overflow: auto;
+    padding-top: 60px;
+
+    display: none;  /* 처음에는 팝업 안보이게 하기 */
+}
+#logof{
+    background-color: rgb(211, 45, 38);
+    float: left;;
+    
+    margin:-25px 0 0 0; /*위 부터 시계방향*/	
+}
+#new_acount{
+    float: right;
+    margin: 20px 15px 0 0;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    word-spacing: 5px;
+}
+
+#new_acount a{
+    text-decoration: none;
+    color: #333;
+}
+
+#new_acount a:hover {
+    color: #F90;
+}
+#clear{
+    background-color: white;
+    height:30px;
+    
+}
+.btn {
+    border: 2px solid transparent;
+    background: rgb(211, 45, 38);
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: 0.25s;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+  }
+  
+  .btn:hover {
+    background-color:  rgb(190, 6, 0);
+  }
+  
+  .login-link {
+    font-size: 12px;
+    color: #444;
+    display: block;
+      margin-top: 12px;
+  }
+.login-form {
+    text-align: center;
+    }
+    .control-group {
+    margin-bottom: 10px;
+    }
+    
+    input {
+    text-align: center;
+    background-color: #ECF0F1;
+    border: 2px solid transparent;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: 0.25s;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    
+    }
+    
+.form1 {  /* 모달 팝업 안의 form */
+    background-color: #fefefe;
+    width: 60%;
+    height: 400px;
+    margin: 5px auto;
+    border: 1px solid #888;
+    position: absolute;
+    top: 150px;
+    left: 320px;
+}
+
+.imgcontainer {
+    text-align: center;  /* 이미지 중앙 정렬 */
+    margin: 24px 0 12px 0;  /* 바깥 여백 */
+    position: relative;
+}
+
+.close { /* 닫기 버튼 (x) */
+    font-size: 35px;
+    font-weight: bold;
+    color: #000;
+    /* position 설정하여 우상단으로 배치 */
+    position: absolute;
+    right: 25px;
+    top: 0;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+img.avatar {
+    width: 40%;  /* 원래 이미지 크기의 40% */
+    border-radius: 50%;  /* 이미지 둥글게 */
+}
+
+
+.container {
+    padding: 16px;
+}
+
+
+.animate {
+    animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -9,110 +9,289 @@ body{
 }
 
 #wrap{
-	
 	text-align:left;
 	margin:0;
 	margin-left: auto;
 	margin-right: auto;
-	
-	background-image: url(../images/shadow.png);
-	background-repeat: repeat-y;
-	
-}
-
-#logo{
-    background-color: rgb(211, 45, 38);
-	float: left;;
-	
-	margin:3px 0 0 0; /*위 부터 시계방향*/	
-}
-
-header{
-	
-	margin: 0;
-	padding: 0;	
-}
-
-nav#top_menu{
-	margin:  0 0 0 0;
-	float: right;
-}
-
-nav#top_menu ul{
-	list-style: none;
-	font-family: Verdana,Geneva, sans-serif;
-	font-size: 13px;
-    color: #333;
-    margin: 6px 0 0 0;
-}
-
-nav#top_menu ul li{
-float: left;
-margin: 0 5px;		
-}
-nav#top_menu a{
-    margin:  0 0 0 20px;
-	display: block;
-	/* padding: 10px; */
-	text-decoration: none;
-	color: #333;
-}
-
-nav#top_menu a:hover{
-	/* background-color:  rgb(211, 45, 38); */
-	background-repeat: repeat-x;
-	background-position: bottom;
-}
-
-#login{
-	float: right;
-	margin: 20px 15px 0 0;
-	font-family: Arial,Helvetica,sans-serif;
-	font-size: 12px;
-	word-spacing: 5px;
-}
-
-#login a{
-	text-decoration: none;
-	color: #333;
-}
-
-#login a:hover {
-	color: #F90;
 }
 
 .clear{
 	clear:both;
 }
 
-
-
-#main_img img{
-	margin: 9px 0 0 0;
+/* 로그인 */
+#login{
+    text-align: end;
+	/*float: right;*/
+	margin: 20px 15px 0 0;
+	font-family: Arial,Helvetica,sans-serif;
+	word-spacing: 5px;
 }
 
-#solution{
-    background-color: whitesmoke;
-    margin: 10px 0 0 0;
+#login .b{
+	text-decoration: none;
+    color: #333;
+    /*position: absolute;
+    right: 60px;
+    bottom: 710;
+    font-size: 13.3px;*/
+}
+
+.a{
+    /*position: absolute;
+    right: 44px;
+    bottom: 722px;*/
+    font-size: 15px;
+}
+
+#loginBtn{
+    /*position: absolute;
+    left: 1462px;
+    top: 16px;*/
     
+    cursor: pointer;
+    background-color: rgba(76, 175, 79, 0);
+    color:  #333;
+    border: none;
+}
+
+#login a:hover ,#loginBtn:hover{
+	color: #F90;
+}
+
+/* 로고 */
+#logo{
+    background-color: rgb(211, 45, 38);
+	float: left;;
+    height: 70px;
+    cursor: pointer;
+    margin:3px 0 0 0;
+    text-align: center;
+}
+
+/* 메뉴 */
+nav#top_menu{
+    float: right;
+    height: 70px;
+    margin: 3px 0 0 0 ;
+}
+
+nav#top_menu ul{
+	list-style: none;
+	font-family: Verdana,Geneva, sans-serif;
+	font-size: 22px;
+    color: #333;
+    margin: 6px 0 0 0;   
+}
+
+nav#top_menu ul li {
+    float: left;
+    margin: 0 0 0 0;
+    width: 25%;
+    height: 60px;
+}
+
+nav#top_menu a{
+    margin: 0 0 0 0px;
+	display: block;
+    text-decoration: none;
+    margin-top: 16px;
+    text-align: center;
+	color: #333;
+}
+
+nav#top_menu a:hover{
+	color: tomato;
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+/* 배너 */
+#banner {
+    position: relative;
+    height: 540px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#banner ul {
+    position: absolute;
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+}
+
+#banner ul li {
+    float: left;
+}
+
+#mainimg{  
+    height: 553px;
+}
+
+/* 최신소프트웨어 */
+#solution{
+    background-color: white;
+    text-decoration: none;
+    height: 500px;
+    margin: 0 100px 0 65px; 
     
 }
 
 #hosting {	
-	padding: 10px;
+    padding: 10px;
+    height: 600px;
 }
 
-#name1{
-  margin: 5px 0 5px 0;  
-    /* border: 5px solid whitesmoke; */
-    
+h3{
+    font-size: 30px;
+    margin: 30px 0 40px 0;
+}
+
+h3 span{
+    font-size: 15px;
+    color: gray;
+    font-weight: 400;
+}
+
+#soft1 {
+    height: auto;
+    float: left; 
+}
+
+#soft1 img{
+    height: 130;
+    box-sizing: border-box;
+    border: 3px solid white;
+    height: 150px;
+    cursor: pointer;
+}
+
+#soft1 b{
+    box-sizing: border-box;
+    border: 2px solid white;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 10px 0 80px 0;
+    line-height: 1.4em;
+}
+
+#soft1 b span {
+    border: 1px solid red;
+    font-weight: 600;
+    color: red;
+    font-size: 10px;
+}
+
+#soft1 img, #soft1 b{
+    display: block;
+    float: none;
+}
+
+#soft1 img:hover, #soft1 b:hover{
+    opacity: 0.5;
+}
+
+/* 다운로드 번호 구입 */
+#last img{
+    height: 115px;
     
 }
+#last{
+    height: 118px;
+    text-align: center;
+    background-color: rgb(254, 124, 10);
+}
+
+#last_logo{
+    background-color: rgb(211, 45, 38);
+    cursor: pointer;
+}
+
+/* NINTENDO */
+#soft2 {
+    height: auto;
+    float: left;
+}
+
+#soft2 img{
+    height: 150px;
+    margin: 0 0 0 -90px;
+    cursor: pointer;
+}
+
+#soft2 b {
+    font-size: 15px;
+    margin: 25px 0 90px 0;
+    line-height: 1.1em;
+}
+
+#soft2 b span{
+    font-weight: 500;
+    color: rgb(129, 129, 129);
+    font-size: 10px;
+    margin: 23px 0 80px 0;
+}
+
+#soft2 img, #soft2 b{
+    display: block;
+    float: none;
+}
+
+#soft2 img:hover, #soft2 b:hover{
+    opacity: 0.5;
+}
+
+#soft3 {
+    height: auto;
+    float: left;
+}
+
+#soft3 img, #soft3 b{
+    display: block;
+    float: none;
+}
+
+#soft3 img{
+    height: 150px;
+    margin: 0 0 0 -40px;
+    cursor: pointer;
+}
+
+#soft3 b {
+    font-size: 15px;
+    margin: 13px 0 80px 0;
+    line-height: 1.1em;
+}
+
+#soft3 b span{
+    font-weight: 500;
+    color: rgb(129, 129, 129);
+    font-size: 10px;
+    margin: 13px 0 80px 0;
+}
+
+#soft3 img:hover, #soft3 b:hover{
+    opacity: 0.5;
+}
+
+/* 스위치광고 */
 #switch{
-    height: 100px;   
+    height: 400px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    
 }
+
+#switch img{
+    height: 398px;
+}
+
+/* 푸터 */
 footer{
-	margin:50px 0 0 0;
+	margin:2px 0 0 0;
 	height: 80px;
 	background-repeat: no-repeat;
 	background-position: 40px center;
@@ -129,42 +308,15 @@ footer #copy{
     font-size: 10px ;
 }
 
-
-@media screen and (max-width: 600px) {
-    .col-l-1 {display: none;}
-    .col-l-2 {width: 16.66%;}
-    .col-l-3 {width: 25%;}
-    .col-l-4 {width: 33.33%;}
-    .col-l-5 {width: 41.66%;}
-    .col-l-6 {width: 50%;}
-    .col-l-7 {width: 58.33%;}
-    .col-l-8 {width: 66.66%;}
-    .col-l-9 {width: 75%;}
-    .col-l-10 {width: 83.33%;}
-    .col-l-11 {width: 91.66%;}
-    .col-l-12 {width: 100%;}
-    .col-l-12-1 {width: 100%;
-    height: 10px;}
+#sns{
+    float: right;
+    /* padding: 5px; */
+    margin: 0 200px;
 }
-/*2. 600px 이상: tablet*/
-@media screen and (min-width: 600px) {
-    .col-m-1 {width: 8.33%;}
-    .col-m-2 {width: 16.66%;}
-    .col-m-3 {width: 25%;}
-    .col-m-4 {width: 33.33%;}
-    .col-m-5 {width: 41.66%;}
-    .col-m-6 {width: 50%;}
-    .col-m-7 {width: 58.33%;}
-    .col-m-8 {width: 66.66%;
-    height: 400px;}
-    .col-m-9 {width: 75%;}
-    .col-m-10 {width: 83.33%;}
-    .col-m-11 {width: 91.66%;}
-    .col-m-12 {width: 100%;}
-    #col-c{height: 400px;}
-    #col-e{height: 250px;}
-    #col-f{height: 150px;}
 
+#sns img{
+    padding: 10px;
+    cursor: pointer;
 }
 
 /*3. 768px 이상: pc*/

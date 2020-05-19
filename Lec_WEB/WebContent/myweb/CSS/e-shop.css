@@ -1,0 +1,319 @@
+body{
+	background-color: white;
+	margin:0;
+	padding: 0;
+	font-size:0.75em;
+	line-height: 1.2em;
+	color: #333;
+}
+
+#wrap{
+	
+	text-align:left;
+	margin:0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logo{
+    background-color: rgb(211, 45, 38);
+	float: left;;
+	
+    margin:3px 0 0 0; /*위 부터 시계방향*/	
+    cursor: pointer;
+}
+
+header{
+	
+	margin: 0;
+	padding: 0;	
+}
+#nintendo{
+    height:62px;
+    
+}
+
+nav#top_menu{
+	margin:  0 0 0 0;
+	float: right;
+}
+
+nav#top_menu1{
+  float: left;
+  width: 100%;
+  overflow: hidden;
+}
+
+nav#top_menu ul{
+	list-style: none;
+	font-family: Verdana,Geneva, sans-serif;
+	font-size: 13px;
+    color: #333;
+    margin: 6px 0 0 0;
+}
+
+nav#top_menu ul li{
+float: left;
+margin: 0 5px;		
+}
+nav#top_menu a{
+    margin:  0 0 0 20px;
+	display: block;
+	/* padding: 10px; */
+	text-decoration: none;
+	color: #333;
+}
+
+nav#top_menu a:hover{
+	color: tomato;
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+#login{
+	float: right;
+	margin: 20px 15px 0 0;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	word-spacing: 5px;
+}
+
+#login a{
+	text-decoration: none;
+	color: #333;
+}
+
+#login a:hover {
+	color: #F90;
+}
+
+.clear{
+	clear:both;
+}
+#solution{
+    background-color: white;
+    margin: 10px 0 0 0;
+    height: 680px;
+    
+}
+
+h3 span{
+    font-size: 15px;
+    color: gray;
+    font-weight: 400;
+}
+#hosting {	
+    padding: 10px;
+    height: 500px;
+}
+#main span{
+    color: rgb(65, 64, 64);
+   position: absolute; 
+   left: 220px;
+   top: 450px;
+   font-size: 22px;
+   /* height: 500px; */
+   line-height: 1.5em;
+}
+
+
+#main {
+    text-align: right;
+    height: 700px;
+}
+#img1{
+    
+    height: 500px;
+    margin-right: 160px ;
+}
+#img2{
+    height: 80px;
+    /* margin: 0 60px 300px 0; */
+    position: absolute;
+    margin: 100px 0 0 0;
+    left: 250px;
+}
+#soft2 {
+    /* display: ; */
+    height: auto;
+    float: left;
+    
+}
+#soft2 img, #soft2 b{
+    display: block;
+    float: none;
+}
+
+#soft2 img{
+    height: 150px;
+    margin: 0 0 0 70px;
+    cursor: pointer;
+}
+
+#soft2 b {
+    
+    font-size: 15px;
+    margin: 10px 0 90px 70px;
+    line-height: 1.1em;
+}
+
+#soft2 b span{
+    font-weight: 500;
+    color: rgb(129, 129, 129);
+    font-size: 10px;
+    margin: 23px 0 80px 0;
+}
+#soft3 {
+    /* display: ; */
+    height: auto;
+    float: left;
+    
+}
+#soft3 img, #soft3 b{
+    display: block;
+    float: none;
+}
+
+#soft3 img{
+    height: 150px;
+    margin: 0 0 0 70px;
+    cursor: pointer;
+}
+
+#soft2 img:hover, #soft2 b:hover{
+    opacity: 0.5;
+}
+#soft3 img:hover, #soft3 b:hover{
+    opacity: 0.5;
+}
+#soft3 b {
+    
+    font-size: 15px;
+    margin: 13px 0 80px 70px;
+    line-height: 1.1em;
+}
+#soft3 b span{
+    font-weight: 500;
+    color: rgb(129, 129, 129);
+    font-size: 10px;
+    margin: 13px 0 80px 0;
+}
+@media screen and (max-width: 600px) {
+    .col-l-1 {display: none;}
+    .col-l-2 {width: 16.66%;}
+    .col-l-3 {width: 25%;}
+    .col-l-4 {width: 33.33%;}
+    .col-l-5 {width: 41.66%;}
+    .col-l-6 {width: 50%;}
+    .col-l-7 {width: 58.33%;}
+    .col-l-8 {width: 66.66%;}
+    .col-l-9 {width: 75%;}
+    .col-l-10 {width: 83.33%;}
+    .col-l-11 {width: 91.66%;}
+    .col-l-12 {width: 100%;}
+    .col-l-12-1 {width: 100%;
+    height: 10px;}
+}
+/*2. 600px 이상: tablet*/
+@media screen and (min-width: 600px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;
+    height: 400px;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    #col-c{height: 400px;}
+    #col-e{height: 250px;}
+    #col-f{height: 150px;}
+
+}
+
+/*3. 768px 이상: pc*/
+@media screen and (min-width: 768px) {
+    .col-k-1 {width: 8.33%;}
+    .col-k-2 {width: 16.66%;}
+    .col-k-3 {width: 25%;}
+    .col-k-4 {width: 33.33%;}
+    .col-k-5 {width: 41.66%;}
+    .col-k-6 {width: 50%;}
+    .col-k-7 {width: 58.33%;}
+    .col-k-8 {width: 66.66%;}
+    .col-k-9 {width: 75%;}
+    .col-k-10 {width: 83.33%;}
+    .col-k-11 {width: 91.66%;}
+    .col-k-12 {width: 100%;}
+    #col-e{height: 133px;}
+    #col-f{height: 133px;}
+    #col-g{height: 133px;}
+    #logo{
+        height: 70px;
+        cursor: pointer;
+    }
+    #img{
+        text-align: center;
+        
+    }
+   #login a{
+       float: right;
+   }
+   #nintendo{
+    height: 70px;
+    text-align: center;
+   }
+   nav#top_menu{
+       height: 70px;
+       margin: 3px 0 0 0 ;
+   }
+
+   nav#top_menu ul li {
+    float: left;
+    margin: 0 0 0 0;
+    width: 25%;
+    height: 60px;
+    
+}
+nav#top_menu ul{
+    font-size: 22px;
+}
+
+nav#top_menu a {
+    margin: 0 0 0 0px;
+    text-align: center;
+    /* padding: 10px; */
+    margin-top: 16px
+    
+}
+h3{
+    font-size: 30px;
+    /* text-align: center; */
+    margin: 30px 0 70px 80px;
+}
+
+#hosting{
+    height: 480px;
+}
+#last img{
+    height: 115px;
+}
+#last_logo{
+    background-color: rgb(211, 45, 38);
+    cursor: pointer;
+}
+#sns{
+    float: right;
+    /* padding: 5px; */
+    margin: 0 200px;
+}
+#sns img{
+    padding: 10px;
+    cursor: pointer;
+}
+
+}

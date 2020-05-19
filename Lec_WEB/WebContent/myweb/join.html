@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+    <link href="CSS/join.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div id="new_acount"><a href="#">닌텐도어카운트</a></div>
+        <!-- 로고 -->
+        <div id="logo" class=" col-k-12">
+            <img src="image/nindologo1.PNG" height="62" onclick='location.href="index.html"' />
+        </div>
+    </header>
+    <div id="login-screen"></div>
+    <div id="login-screen">
+        <div id="login">
+            <div id="clear"></div>
+            <div id="container" class=" col-k-10">
+                <div id="clear" class=""></div>
+                <h2>닌텐도 어카운트 작성</h2>
+                <p>어카운트를 가지고 있지 않은 경우에는 아래 정보를 입력해 주십시오</p>
+                <!-- 폼 시작 -->
+                <form name="form2" action="https://www.w3schools.com/action_page.php">
+                    <div class="row">
+                        <div class="col-k-3">
+                            <label for="fname">닉네임 (필수)</label>
+                        </div>
+                        <div class="col-k-6">
+                            <input type="text" id="fname" name="firstname" placeholder="10자 이내">
+                            <span class="sp">※닌텐도로부터의 연락에 사용됩니다. 무단으로 다른 사람에게 공개되지는 않습니다.</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-k-3">
+                            <label for="lname">메일주소 (필수)</label>
+                        </div>
+                        <div class="col-k-6">
+                            <input type="text" id="lname" name="lastname" placeholder="메일주소">
+                            <span class="sp">※컴퓨터나 Web 메일의 주소를 권장합니다.</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-k-3">
+                            <label for="lname">암호 (필수)</label>
+                        </div>
+                        <div class="col-k-6">
+                            <input type="text" id="lname" name="password" placeholder="영문과 숫자를 혼합한 8자 이상">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-k-3">
+                            <label for="lname">암호 재입력 (필수)</label>
+                        </div>
+                        <div class="col-k-6">
+                            <input type="text" id="lname" name="repassword" placeholder="영문과 숫자를 혼합한 8자 이상">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-k-3">
+                            <label for="country">국가</label>
+                        </div>
+                        <div class="col-k-6">
+                            <select id="country" name="country">
+                                <option value="korea">대한민국</option>
+                                <option value="usa">미국</option>
+                                <option value="quait">쿠웨이트</option>
+                                <option value="arap">아랍에미리트</option>
+                                <option value="anglila">앵귈라</option>
+                                <option value="alba">알바니아</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="clear"></div>
+                    <div id="row" class="col-k-6">
+                        <input type="button" value="어카운트 생성" onclick="chkSubmit()">
+                    </div>
+                </form>
+                <script src="JS/main.js" type="text/javascript"></script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

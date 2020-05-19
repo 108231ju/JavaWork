@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: Arial;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 0.75em;
+    line-height: 1.2em;
+    color: #333;
+}
+
+#wrap {
+    text-align: left;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: repeat-y;
+
+}
+
+#logo {
+    background-color: rgb(211, 45, 38);
+    float: left;
+    margin: 3px 0 0 0;
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    padding: 30px;
+    background-color: #f2f2f2;
+    margin: 0 200px 0 130px;
+    height: 711px;
+    
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    transform: translateX(50%);
+}
+
+label {
+    display: inline-block;
+    padding: 12px 12px 12px 0;
+    /* transform: translateX(382px); */
+    transform: translateX(305px);
+}
+
+input[type=button] {
+    background-color: rgb(211, 45, 38);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 100%;
+    margin-top: 4px;
+    transform: translateX(50%);
+    
+}
+
+input[type=button]:hover {
+    background-color: rgb(190, 6, 0);
+}
+
+#row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+#new_acount a {
+    text-decoration: none;
+    color: #333;
+}
+
+#new_acount {
+    float: right;
+    margin: 20px 15px 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    word-spacing: 5px;
+}
+
+#clear {
+    height: 40px;
+}
+
+.sp {
+    transform: translateX(300px);
+    /* transform: translateX(380px); */
+    font-size: 9.5px;
+    display: flex;
+}
+
+h2,
+p {
+    text-align: center;
+}
+
+/*3. 768px 이상: pc*/
+@media screen and (min-width: 768px) {
+    .col-k-1 {width: 8.33%;}
+    .col-k-2 {width: 16.66%;}
+    .col-k-3 {width: 25%;}
+    .col-k-4 {width: 33.33%;}
+    .col-k-5 {width: 41.66%;}
+    .col-k-6 {width: 50%;}
+    .col-k-7 {width: 58.33%;}
+    .col-k-8 {width: 66.66%;}
+    .col-k-9 {width: 75%;}
+    .col-k-10 {width: 83.33%;}
+    .col-k-11 {width: 91.66%;}
+    .col-k-12 {width: 100%;}
+    #col-e{height: 133px;}
+    #col-f{height: 133px;}
+    #col-g{height: 133px;}
+}
