@@ -5,23 +5,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Insert title here</title>
+<title>subParam</title>
 </head>
 <body>
+<%! String id, pw; %>
 <%
-	int sum = 0;
-	for(int cnt = 1; cnt <= 100; cnt++){
-		sum += cnt;
-	}
+	id = request.getParameter("id");
+	pw = request.getParameter("pw");
 %>
-1부터 100 까지의 합은 : <%= sum %>
-<hr>
-<h3>오늘의 식단</h3>
-  - 비빔밥<br>
-  - 개구리밥<br>
-  - 스폰지밥<br>
-<%@ include file = "test.jsp" %>
-  
+<p> 현재 페이지는 subParam </p>
+아이디: <%= id %><br>
+비밀번호: <%= pw %><br>
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>

@@ -5,23 +5,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Insert title here</title>
+<title>forward</title>
 </head>
 <body>
-<%
-	int sum = 0;
-	for(int cnt = 1; cnt <= 100; cnt++){
-		sum += cnt;
-	}
-%>
-1부터 100 까지의 합은 : <%= sum %>
-<hr>
-<h3>오늘의 식단</h3>
-  - 비빔밥<br>
-  - 개구리밥<br>
-  - 스폰지밥<br>
-<%@ include file = "test.jsp" %>
-  
+
+<!-- Action Tag -->
+<h3>지금의 페이지는 forward 페이지 입니다.</h3>
+<jsp:forward page="sub.jsp"/>
+<p>위 라인의 내용은 sub 페이지의 내용입니다</p>
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>

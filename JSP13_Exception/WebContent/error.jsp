@@ -1,27 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page isErrorPage="true" %>
+<% response.setStatus(200); %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Insert title here</title>
+<title>에러 안내</title>
 </head>
 <body>
-<%
-	int sum = 0;
-	for(int cnt = 1; cnt <= 100; cnt++){
-		sum += cnt;
-	}
-%>
-1부터 100 까지의 합은 : <%= sum %>
-<hr>
-<h3>오늘의 식단</h3>
-  - 비빔밥<br>
-  - 개구리밥<br>
-  - 스폰지밥<br>
-<%@ include file = "test.jsp" %>
-  
+에러가 발생했습니다... <br>
+예외 타입은 : <%= exception.getClass().getName() %><br>
+예외 메세지는 : <%= exception.getMessage() %>
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>

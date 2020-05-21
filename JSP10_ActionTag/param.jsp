@@ -5,23 +5,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Insert title here</title>
+<title>param</title>
 </head>
 <body>
+<!-- Action Tag -->
+<h2>현재 페이지는 param 페이지</h2>
 <%
-	int sum = 0;
-	for(int cnt = 1; cnt <= 100; cnt++){
-		sum += cnt;
-	}
+	int num = 788;
 %>
-1부터 100 까지의 합은 : <%= sum %>
-<hr>
-<h3>오늘의 식단</h3>
-  - 비빔밥<br>
-  - 개구리밥<br>
-  - 스폰지밥<br>
-<%@ include file = "test.jsp" %>
-  
+<jsp:forward page = "subParam.jsp">
+	<jsp:param value="test123" name="id"/>
+	<jsp:param value="<%= num %>" name="pw"/>
+</jsp:forward>
+
+<p>위 라인의 내용은 subParam 의 내용입니다 </p>
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>

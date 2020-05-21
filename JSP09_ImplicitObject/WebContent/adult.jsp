@@ -5,23 +5,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Insert title here</title>
+<title>성인용 타이틀</title>
 </head>
 <body>
+<%! int age; %>
 <%
-	int sum = 0;
-	for(int cnt = 1; cnt <= 100; cnt++){
-		sum += cnt;
-	}
+	String str = request.getParameter("age");
+	age = Integer.parseInt(str);
 %>
-1부터 100 까지의 합은 : <%= sum %>
-<hr>
-<h3>오늘의 식단</h3>
-  - 비빔밥<br>
-  - 개구리밥<br>
-  - 스폰지밥<br>
-<%@ include file = "test.jsp" %>
-  
+
+당신은 <%= age %>세 입니다.
+성인이군요... 사이트를 이용하실 수 있습니다.. <br>
+<a href="input_age.html">처음으로</a>
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
